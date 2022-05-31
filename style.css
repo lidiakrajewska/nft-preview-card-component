@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #0d192b;
+  font-family: "Outfit", sans-serif;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00fff7;
+}
+
+.card {
+  width: Min(87%, 350px);
+  padding: 1.5rem;
+  background-color: #14253d;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 5px 10px 20px;
+          box-shadow: rgba(0, 0, 0, 0.2) 5px 10px 20px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+.img--wrapper {
+  position: relative;
+}
+
+.info--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #2f415b;
+}
+
+.creator--wrapper {
+  margin-bottom: 0;
+}
+
+.title {
+  margin: 1.2rem 0;
+  font-size: 1.35rem;
+  color: white;
+}
+
+.text {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #8bacda;
+  line-height: 1.6;
+}
+
+.text--eth {
+  color: #00fff7;
+  font-weight: 600;
+}
+
+.main__img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.creator__img {
+  height: 2rem;
+  margin-right: 1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.icon {
+  height: 1.2rem;
+  margin-right: 0.4rem;
+}
+
+.view--icon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.colour-layer {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .text {
+    font-size: 1.1rem;
+  }
+  .wrapper .text {
+    font-size: 0.95rem;
+  }
+  .img--wrapper:hover .view--icon {
+    display: block;
+  }
+  .img--wrapper:hover .colour-layer {
+    display: block;
+    background-color: rgba(0, 255, 247, 0.55);
+  }
+}
+/*# sourceMappingURL=style.css.map */
